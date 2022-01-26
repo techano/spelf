@@ -8,6 +8,8 @@
     <title>Student Login - Spelf</title>
     <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="shortcut icon" href="../assets/imgs/favicon.png" type="image/png">
+    <meta name="google-signin-client_id" content="501873699249-ap8klvvu8dkgpjlisc4taspb1iljgudb.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 <body>
@@ -16,6 +18,7 @@
             <img src="../assets/imgs/logo.png" alt="Spelf Logo" class="loginframeheaderlogo">
         </div>
         <div class="loginframeform">
+            <div class="g-signin2"></div>
             <form action="action_login.php" method="post">
                 <input type="text" placeholder="Username" required>
 
