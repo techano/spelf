@@ -1,0 +1,110 @@
+/* css font / typogrophy styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* actual styling start */
+
+body {
+  background: linear-gradient(to top right, #00cefd, #a6f88d);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas:
+    ". . ."
+    ". login ."
+    ". . .";
+}
+
+.loginframe {
+  grid-area: login;
+  background-color: #3a4856;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-rows: 2fr 3fr 1fr;
+  grid-template-areas:
+    ". loginframeheader ."
+    ". loginframeform ."
+    ". loginframefooter .";
+}
+
+.loginframeheader {
+  grid-area: loginframeheader;
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.loginframeheaderlogo {
+  height: 4rem;
+}
+
+.loginframeform {
+  grid-area: loginframeform;
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+.loginframefooter {
+  grid-area: loginframefooter;
+  margin-bottom: 1rem;
+  display: grid;
+  justify-content: center;
+}
+
+input {
+    border-radius: 0.4rem;
+    width: 70%;
+    padding: 0.4rem;
+    margin: 0.3rem;
+}
+
+input[type=text] {
+  
+}
+
+input[type=password] {
+
+}
+
+button {
+    border-radius: 0.4rem;
+    width: 70%;
+    padding: 0.4rem;
+    transition: all 0.3s ease 0s;
+    background-color: #38b6ff;
+}
+
+button:hover {
+    background-color: #1F9DE6;
+    
+}

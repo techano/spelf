@@ -1,0 +1,206 @@
+/* Table Of Contents
+* Global styling lines 22-42
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* global styling beings */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+/*nav bar styling begins*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c2337;
+  color: white;
+  font-size: 15px;
+}
+
+.navbar-logo {
+  margin: 0.5rem;
+  width: auto;
+  height: 3rem;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  border-radius: 10px;
+  transition: background-color 250ms linear;
+}
+
+.navbar-links li a:hover {
+  background-color: #38b6ff;
+}
+
+.navbar-mlogin {
+  text-decoration: none;
+  color: white;
+  display: block;
+  position: absolute;
+
+  right: 4rem;
+  top: 1rem;
+  display: none;
+}
+.navbar-mtoggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 30;
+  transition: transform 1s ease-in;
+}
+
+.navbar-mtoggle span {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.navbar-mbar1 {
+  top: 0px;
+}
+
+.navbar-mbar2 {
+  top: 10px;
+}
+
+.navbar-mbar3 {
+  top: 20px;
+}
+
+/* nav bar styling ends */
+/* home div styling begins */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  text-align: center;
+}
+
+/* home div styling ends */
+/*mobile edition styling beings*/
+
+@media (max-width: 720px) {
+  .navbar-mtoggle {
+    display: flex;
+  }
+
+  .navbar-mtoggle span {
+    transition: 0.25s ease-in-out;
+  }
+
+  .navbar-mtoggle.active .navbar-mbar1 {
+    top: 12px;
+    transform: rotate(135deg);
+  }
+
+  .navbar-mtoggle.active .navbar-mbar2 {
+    opacity: 0;
+  }
+
+  .navbar-mtoggle.active .navbar-mbar3 {
+    top: 12px;
+    transform: rotate(-135deg);
+  }
+
+  .navbar-links {
+    overflow: hidden;
+    max-height: 0;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-links.active {
+    max-height: 140px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-mlogin {
+    display: flex;
+  }
+
+  .navbar-login {
+    display: none;
+  }
+
+  .navbar-logo {
+    height: 2.5rem;
+  }
+}

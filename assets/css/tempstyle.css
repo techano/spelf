@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Open Sauce One";
+    src: url("fonts/OpenSauceOne-SemiBold.woff2") format("woff2"),
+      url("fonts/OpenSauceOne-SemiBold.woff") format("woff"),
+      url("font/OpenSauceOne-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+  
+body {
+    font-family: "Open Sauce One";
+    margin: 0;
+    padding: 0;
+    background-color: #0c2337;
+    color: white;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

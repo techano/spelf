@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 300;
+}
+/*start of styling body*/
+body {
+  background: linear-gradient(to top right, #00cefd, #a6f88d);
+  color: black;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 10fr max-content;
+  grid-template-rows: 4rem 1rem 1fr;
+  grid-template-areas:
+    "navbar navbar navbar"
+    ". . ."
+    ". main photo";
+}
+
+/*navbar styling beings*/
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  margin: 0.5rem;
+  width: auto;
+  height: 3rem;
+}
+
+.navbar-links ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-links ul li {
+  list-style: none;
+}
+
+.navbar-links ul li a {
+  padding: 0.25rem;
+}
+
+.navbar-links ul li a img {
+  height: 3rem;
+}
+/*navbar styling ends*/
+
+.text {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: 10rem max-content max-content;
+  grid-template-columns: 1fr;
+  grid-template-areas: "." "heading" "subtext";
+  margin: 0.5rem;
+}
+
+.text h1 {
+  grid-area: heading;
+  font-size: 50px;
+}
+
+.text h2 {
+  grid-area: subtext;
+  font-size: 25px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.photo {
+  height: 100%;
+  grid-area: photo;
+  aspect-ratio: 2/3;
+}
+
+@media (max-width: 1000px) {
+  body {
+    grid-template-columns: 0fr 10fr max-content;
+    grid-template-rows: 4rem 1rem 2fr;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .text {
+    grid-template-rows: 1rem max-content max-content;
+    justify-items: center;
+  }
+
+  .text h1 {
+    text-align: center;
+  }
+
+  .text h2 {
+    text-align: center;
+  }
+}
