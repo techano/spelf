@@ -75,16 +75,25 @@ body {
 }
 
 .loginframeformseperator {
-  width: 100%; 
-  text-align: center; 
-  border-bottom: 1px solid #000; 
-  line-height: 0.1em;
-  margin: 10px 0 20px; 
+  width: 70%;
+  margin: .7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-weight:300;
+  color: #fff;
 }
 
-.loginframeformseperator span {
-  background:#fff; 
-  padding:0 10px; 
+.loginframeformseperator:before, .loginframeformseperator:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+
+.loginframeformseperator:after {
+  margin: 0 -55% 0 .5em;
 }
 
 .loginframefooter {
