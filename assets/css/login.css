@@ -74,6 +74,17 @@ body {
   justify-content: center;
 }
 
+.loginframeformseperator {
+  text-align: center;
+  height: 0.5em;
+  border-bottom: 2px solid black;
+  margin-bottom: 0.5em;
+}
+
+.loginframeformseperator:first-line {
+  background-color: white;
+}
+
 .loginframefooter {
   grid-area: loginframefooter;
   margin-bottom: 1rem;
@@ -82,10 +93,10 @@ body {
 }
 
 input {
-    border-radius: 0.4rem;
-    width: 70%;
-    padding: 0.4rem;
-    margin: 0.3rem;
+  border-radius: 0.4rem;
+  width: 70%;
+  padding: 0.4rem;
+  margin: 0.3rem;
 }
 
 input[type=text] {
