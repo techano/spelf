@@ -75,14 +75,16 @@ body {
 }
 
 .loginframeformseperator {
-  text-align: center;
-  height: 0.5em;
-  border-bottom: 2px solid white;
-  margin-bottom: 0.5em;
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
 }
 
-.loginframeformseperator:first-line {
-  background-color: white;
+.loginframeformseperator span {
+  background:#fff; 
+  padding:0 10px; 
 }
 
 .loginframefooter {
