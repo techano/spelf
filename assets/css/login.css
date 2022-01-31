@@ -74,7 +74,7 @@ body {
   justify-content: center;
 }
 
-.loginframeformseperator {
+h1 {
   width: 70%;
   margin: .7em auto;
   overflow: hidden;
@@ -83,7 +83,7 @@ body {
   color: #fff;
 }
 
-.loginframeformseperator:before, .loginframeformseperator:after {
+h1:before, h1:after {
   content: "";
   display: inline-block;
   width: 50%;
@@ -92,7 +92,7 @@ body {
   border-bottom: 1px solid;
 }
 
-.loginframeformseperator:after {
+h1:after {
   margin: 0 -55% 0 .5em;
 }
 
