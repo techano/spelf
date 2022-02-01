@@ -23,8 +23,8 @@ h2 {
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 /* actual styling start */
@@ -74,26 +74,27 @@ body {
   justify-content: center;
 }
 
-h1 {
+p {
   width: 70%;
-  margin: .7em auto;
+  margin: 0.7em auto;
   overflow: hidden;
   text-align: center;
-  font-weight:300;
+  font-weight: 300;
   color: #fff;
 }
 
-h1:before, h1:after {
+p:before,
+p:after {
   content: "";
   display: inline-block;
   width: 50%;
-  margin: 0 .5em 0 -55%;
+  margin: 0 0.5em 0 -55%;
   vertical-align: middle;
   border-bottom: 1px solid;
 }
 
-h1:after {
-  margin: 0 -55% 0 .5em;
+p:after {
+  margin: 0 -55% 0 0.5em;
 }
 
 .loginframefooter {
@@ -110,23 +111,20 @@ input {
   margin: 0.3rem;
 }
 
-input[type=text] {
-  
+input[type="text"] {
 }
 
-input[type=password] {
-
+input[type="password"] {
 }
 
 button {
-    border-radius: 0.4rem;
-    width: 70%;
-    padding: 0.4rem;
-    transition: all 0.3s ease 0s;
-    background-color: #38b6ff;
+  border-radius: 0.4rem;
+  width: 70%;
+  padding: 0.4rem;
+  transition: all 0.3s ease 0s;
+  background-color: #38b6ff;
 }
 
 button:hover {
-    background-color: #1F9DE6;
-    
+  background-color: #1f9de6;
 }
