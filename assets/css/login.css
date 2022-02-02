@@ -106,19 +106,24 @@ body {
 
 input {
   border-radius: 0.4rem;
+  border: 1px solid #e6e6e6;
+  outline: none;
   width: 70%;
   padding: 0.4rem;
   margin: 0.3rem;
+  transition: 0.18s ease-out;
+  box-shadow: inset 1px 2px 8px rgba(56, 182, 255, 0.07);
 }
 
-input[type="text"] {
+input:focus {
+  border: 1px solid #38b6ff;
+  box-shadow: inset 1px 2px 4px rgba(56, 182, 255, 0.01),
+    0px 0px 8px rgba(56, 182, 255, 0.2);
 }
-
-input[type="password"] {
-}
-
 button {
   border-radius: 0.4rem;
+  border: none;
+  outline: none;
   width: 70%;
   padding: 0.4rem;
   transition: all 0.3s ease 0s;
