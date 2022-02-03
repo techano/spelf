@@ -1,4 +1,4 @@
-alert("G Sign in script loaded");
+alert("G Sign in script v2 loaded");
 
 function onSignIn(googleuser) {
   var profile = auth2.currentUser.get().getBasicProfile();
